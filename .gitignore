@@ -27,4 +27,4 @@ venv/
 __pycache__/
 *.pyc
 
-streaming_simulacao.py
+alertas.txt
