@@ -1,0 +1,4 @@
+=== Alertas de Temperatura ===
+[2025-05-28 16:12:09] ALERTA! Temperatura alta: 81.92°C
+[2025-05-28 16:12:17] ALERTA! Temperatura alta: 86.15°C
+[2025-05-28 16:12:19] ALERTA! Temperatura alta: 81.22°C

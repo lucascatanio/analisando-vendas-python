@@ -1,0 +1,9 @@
+ID_Venda,Produto,Quantidade,Valor_Total,Data_Venda
+1,Notebook,2,5000,2024-01-05
+2,Mouse,5,250,2024-01-06
+3,Teclado,3,450,2024-01-06
+4,Notebook,1,2500,2024-01-07
+5,Mouse,4,200,2024-01-08
+6,Monitor,2,1600,2024-01-08
+7,Teclado,2,300,2024-01-09
+8,Notebook,1,2500,2024-01-10

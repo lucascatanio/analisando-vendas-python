@@ -1,0 +1,30 @@
+
+---
+
+## 📄 `.gitignore`
+
+```gitignore
+# Ignorar banco de dados local
+database.db
+
+# Ignorar arquivos de gráficos/imagens geradas
+*.png
+
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ambientes virtuais
+venv/
+.env/
+
+# Arquivos do PyCharm/VSCode
+.idea/
+.vscode/
+
+# Arquivos compilados
+__pycache__/
+*.pyc
+
+streaming_simulacao.py
