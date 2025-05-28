@@ -1,80 +1,57 @@
-# 📊 Sistema de Análise de Vendas com SQLite, Pandas e Matplotlib
+# Análise de Vendas com SQLite, Pandas e Matplotlib
 
-Este projeto é um mini sistema de análise de vendas utilizando Python. Ele integra um banco de dados SQLite com dados importados de arquivos CSV e JSON, realiza consultas SQL e gera visualizações gráficas dos resultados.
+Este projeto realiza uma análise simples de dados de vendas utilizando:
+
+- SQLite para armazenar os dados
+- Pandas para manipulação e consulta
+- Matplotlib para geração de gráficos
+
+## Funcionalidades
+
+- Criação de banco de dados e tabelas
+- Importação de dados de arquivos CSV e JSON
+- Consultas SQL para análises
+- Geração de gráfico de vendas por produto
+- Cálculo de média de vendas por dia
+
+## Como executar
+
+1. Certifique-se de ter Python 3 instalado.
+2. Instale as dependências com:
+   ```
+   pip install pandas matplotlib
+   ```
+3. Execute o script:
+   ```
+   python main.py
+   ```
+
+## Resultado
+
+- Exibição de dados no terminal
+- Geração de gráfico `grafico_vendas.png`
+- Exemplo de uso real de SQLite + Pandas + Matplotlib
+
+## Licença
 
 ---
 
-## 🚀 Funcionalidades
+## Simulador de Temperatura (`streaming_simulacao.py`)
 
-- 📥 Leitura de dados de vendas (CSV) e clientes (JSON)
-- 🗃️ Armazenamento em banco de dados SQLite
-- 🔎 Consultas SQL para análise de dados:
-  - Produto mais vendido
-  - Total de vendas por produto
-  - Vendas por intervalo de datas
-  - Média de vendas por dia
-- 📊 Geração de gráfico de barras com `matplotlib`
-- 🖼️ Salvamento do gráfico como imagem PNG
+Este script simula a leitura de temperatura de um sensor em tempo real.
 
----
+- A cada 2 segundos, uma nova leitura aleatória entre 50°C e 90°C é gerada.
+- Se a temperatura ultrapassar 70°C, um alerta é emitido e salvo no arquivo `alertas.txt`.
 
-## 📂 Estrutura de Pastas
-
-```
-.
-├── dados/
-│   ├── vendas.csv
-│   └── clientes.json
-├── database.db
-├── grafico_vendas.png
-├── main.py
-├── README.md
-└── .gitignore
-```
-
----
-
-## 🛠️ Requisitos
-
-- Python 3.8+
-- Bibliotecas:
-  - `pandas`
-  - `matplotlib`
-
-### Instalar dependências:
+### Como executar
 
 ```bash
-pip install pandas matplotlib
+python streaming_simulacao.py
 ```
 
----
+### Saída
 
-## ▶️ Como executar
+- Leituras contínuas no terminal.
+- Arquivo `alertas.txt` contendo os registros de temperatura acima do limite.
 
-```bash
-python main.py
-```
-
----
-
-## 📈 Exemplo de saída
-
-- Produto mais vendido com total de unidades
-- Tabela com total de vendas por produto
-- Tabela com vendas em intervalo de datas
-- Gráfico gerado: `grafico_vendas.png`
-
----
-
-## 📌 Observações
-
-- Os dados de entrada devem estar na pasta `dados/` com os nomes:
-  - `vendas.csv`
-  - `clientes.json`
-- O banco de dados será criado como `database.db`.
-
----
-
-## 📝 Licença
-
-Este projeto é de uso educacional e está disponível sob a licença MIT.
+Para encerrar a simulação, use `Ctrl+C`.
