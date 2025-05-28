@@ -95,7 +95,7 @@ def gerar_grafico_vendas(df_total_vendas):
     Gera e salva gráfico de barras do total de vendas por produto.
     """
     plt.figure(figsize=(8,6))
-    plt.bar(df_total_vendas['produto'], df_total_vendas['total_vendas'], color='skyblue')
+    plt.bar(df_total_vendas['Produto'], df_total_vendas['total_vendas'], color='skyblue')
     plt.title('Total de Vendas por Produto')
     plt.xlabel('Produto')
     plt.ylabel('Valor Total (R$)')
